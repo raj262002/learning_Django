@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+{% block content %}
+    <h1>
+        Home Template
+    </h1>
+    <div>
+        <div>
+            {% for room in rooms %}
+                <div>
+                    <h5>{{ room.id }} -- <a href="/rooms/{{room.id}}">{{room.name}}</a> </h5>
+                </div>
+            {% endfor %}
+        </div>
+        <p>Page visit : </p><span>{{ page_visit_count }}</span><hr>
+        <p>Total visit : </p><span>{{ total_visit_count}}</span>
+    </div>
+{%endblock%}
