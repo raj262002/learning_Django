@@ -73,3 +73,9 @@ build/
 *.orig
 *.rej
 *~
+
+#ignore static vendor files
+\src\staticfiles\vendors
+
+#local cdn
+\local-cdn
